@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>var, let, const</title>
+  </head>
+  <body>
+    <h2>var vs let</h2>
+    <ul>
+      <li>var is globally scoped while let and const are block scoped.</li>
+      <li>var can be updated and re-declared within its scope.</li>
+      <li>let can be updated but not re-declared.</li>
+      <li>const can neither be updated nor be re-declared.</li>
+    </ul>
+
+    <script>
+      // ====================Explanation of var
+      var a = 5;
+      console.log(a, "a");
+      var a = "ali";
+      console.log(a, "a");
+
+      // ====================Explanation of let
+      let x = "ali";
+      console.log(x, "x");
+      //   let x = 9 [Throws Error]
+      //   console.log(x,"x");
+      x = 9;
+      console.log(x, "x");
+
+      // ====================Explanation of const
+      const test = 9;
+      console.log(test, "test");
+      //   test = 10; [Throws Error]
+      //   console.log(test,"test");
+      //   const test = "ali"; [Throws Error]
+      //   console.log(test, "test");
+    </script>
+  </body>
+</html>
