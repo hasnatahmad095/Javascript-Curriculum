@@ -12,6 +12,10 @@
       <li>var can be updated and re-declared within its scope.</li>
       <li>let can be updated but not re-declared.</li>
       <li>const can neither be updated nor be re-declared.</li>
+      <li>
+        var variables are intialized while let and const are not initialized.
+      </li>
+      <li>const must be initilized during declaration unlike let and var.</li>
     </ul>
 
     <script>
@@ -20,6 +24,10 @@
       console.log(a, "a");
       var a = "ali";
       console.log(a, "a");
+      {
+        var a = 7;
+        console.log(a, "a");
+      }
 
       // ====================Explanation of let
       let x = "ali";
@@ -27,6 +35,12 @@
       //   let x = 9 [Throws Error]
       //   console.log(x,"x");
       x = 9;
+      console.log(x, "x");
+      {
+        // Block Scoped
+        let x = 10;
+        console.log(x, "x");
+      }
       console.log(x, "x");
 
       // ====================Explanation of const
@@ -36,6 +50,8 @@
       //   console.log(test,"test");
       //   const test = "ali"; [Throws Error]
       //   console.log(test, "test");
+      //   const Harry; [Throws Error]
+      //   console.log(Harry,"Harry");
     </script>
   </body>
 </html>
