@@ -53,12 +53,13 @@
     <ul>
       <li>&& (And Operator)</li>
       <li>|| (Not Operator)</li>
+      <li>! (Logical Not)</li>
     </ul>
 
     <script>
+      // =======================Arithmetic
       let a = 45;
       let b = 4;
-      // =======================Arithmetic
       console.log(a + b, "Addition");
       console.log(a - b, "Subtraction");
       console.log(a / b, "Division");
@@ -74,6 +75,22 @@
       let assign = 1;
       assign += 5;
       console.log(assign, "assign");
+
+      // =======================Comparison
+      let comp1 = 6;
+      let comp2 = "6";
+      console.log("comp1 == comp2", comp1 == comp2);
+      console.log("comp1 != comp2", comp1 != comp2);
+      console.log("comp1 === comp2", comp1 === comp2);
+      console.log("comp1 !== comp2", comp1 !== comp2);
+
+      // =======================Logical
+      let x = 5;
+      let y = 6;
+      console.log(x < y && x == 7);
+      console.log(x < y || x == 5);
+      console.log(!false);
+      console.log(!true);
     </script>
   </body>
 </html>
