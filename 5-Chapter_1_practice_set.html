@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter - 1 | Practice Set</title>
+  </head>
+  <body>
+    <script>
+      // 1===========================Create a variable of type string and try to add a number to it.
+      let x = "ali";
+      let y = 9;
+      let z = x + y;
+      // [Number will be attached with String]
+      console.log(z, "z");
+
+      // 2===========================Use typeof operator to find the type of variable.
+      console.log(typeof z);
+
+      // 3===========================Create a const object in javascript. Can you change it hold a number later ?
+      const a1 = {
+        name: "harry",
+        section: 1,
+        isPrincipal: false,
+      };
+      //  a1 = 54 [Throws Error]
+      console.log(a1, "a1");
+
+      // 4==========================Try to add a new key to the const object in problem 3. Were you able to do it ?
+      a1["Friend"] = "ali";
+      console.log(a1, "a1");
+
+      // 5=========================Write a js program to create a word-meaning dictionary of 5 words.
+      const dictionary = {
+        appreciate: "recognize the full worth of",
+        anxiety: "worried about something",
+        courage: "the ability to do something that frightens one",
+        patience: "the capacity to accept delay without getting angry",
+        wisdom:
+          "the quality of having experience, knowledge, and good judgment",
+      };
+      console.log(dictionary.wisdom);
+      console.log(dictionary["anxiety"]);
+    </script>
+  </body>
+</html>
