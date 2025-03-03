@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 4 Practice Set</title>
+  </head>
+  <body>
+    <script>
+      // Problem No 1
+      let str = 'Har"';
+      console.log(str);
+      console.log(str.length);
+
+      // Problem No 2 (.includes method returns true or false)
+      let sentence = "The quick brown fox jumps over the lazy dog";
+      console.log(sentence.includes("dog"));
+
+      // startswith
+      let text = "Hello, JavaScript!";
+      console.log(text.startsWith("Hello")); // true
+      console.log(text.startsWith("Java")); // false (because "Java" is not at the beginning)
+      console.log(text.startsWith("Hello", 0)); // true (start checking from index 0)
+      console.log(text.startsWith("Java", 7)); // true (because "Java" starts at index 7)
+
+      let mytext = "Welcome to coding!";
+      console.log(mytext.endsWith("coding!")); // true
+      console.log(mytext.endsWith("to")); // false (because "to" is in the middle)
+      console.log(mytext.endsWith("coding", 17)); // true (checks only the first 17 characters)
+
+      //   Problem 5
+      // Existing string cannot be changeable, its immutable
+    </script>
+  </body>
+</html>
