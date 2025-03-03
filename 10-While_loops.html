@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While Loops</title>
+  </head>
+  <body>
+    <h2>While Loops</h2>
+
+    <script>
+      // Syntax
+      //   while (condition) {
+      //     code to be executed
+      //   }
+
+      // If the condition never becomes false, the loop will never end and this might crash
+
+      //   While Loop
+      //   let num = prompt("Enter a value");
+      //   num = Number.parseInt(num);
+
+      //   let i = 0;
+      //   while (i < num) {
+      //     console.log(i, "i");
+      //     i++;
+      //   }
+
+      //   Do While Loop (Executed atleat once)
+      let num = prompt("Enter a value");
+      num = Number.parseInt(num);
+
+      let i = 0;
+      do {
+        console.log(i,"i");
+        i++
+      } while (i < num);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Loops</title>
+  </head>
+  <body>
+    <p>
+      Loops are used to perform repeated actions. For example you are asked to
+      print number from 1 to 100. by printing them manually 1 by 1 its very
+      hectic and timetaking, with the help of loops we can do it easily and
+      fastly
+    </p>
+    <h2>Types of Loops</h2>
+    <ul>
+      <li>for loop [Loop a block of code no of times]</li>
+      <li>for in loop [loops through the keys of an object]</li>
+      <li>for of loop [loops through the values of an object]</li>
+      <li>While Loop [loops a block based on a specific condition]</li>
+      <li>Do While Loop [While loop variant which runs atleast once]</li>
+    </ul>
+
+    <script>
+      // For Loop (Syntax)
+      // for (satement 1, statement 2, statement 3) {
+      //     code to be executed
+      // }
+
+      //   for (let j = 0; j < 10; j++) {
+      //     console.log(j);
+      //   }
+
+      // Sum of prompt numbers
+    //   let sum = 0;
+    //   let n = prompt("Enter your number");
+    //   n = Number.parseInt(n);
+
+    //   for (let i = 0; i < n; i++) {
+    //     console.log(i, "i");
+    //     sum += i + 1;
+    //     console.log(sum, "sum");
+    //   }
+    //   console.log("Sum of first " + n + " natural numbers is " + sum);
+
+
+    // For In
+    let obj = {
+        ali:300,
+        ahmad:101,
+        numan:200,
+    }
+
+    for (let a in obj) {
+        console.log(obj[a],"a");
+    }
+
+    for (let b of "Harry") {
+        console.log(b,"b");
+    }
+
+    </script>
+  </body>
+</html>
