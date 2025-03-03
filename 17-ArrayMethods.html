@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Methods</title>
+  </head>
+  <body>
+    <h2>Array Methods</h2>
+    <ul>
+      <li>toString()</li>
+      <li>join()</li>
+      <li>pop() [removes last element from array]</li>
+      <li>push() [adds element at last in array]</li>
+      <li>shift() [returns firt element and returns it]</li>
+      <li>unShift() [add elements to the beginning and returns new array length]</li>
+    </ul>
+
+    <script>
+      let num = [1, 2, 3, 4, 5, 6];
+      console.log(num, "num");
+      // toString()
+      let newStr = num.toString();
+      console.log(newStr, "newStr");
+      // Join  Returns String
+      let c = num.join("and");
+      console.log(c, "c");
+
+      // Pop {removed last from same array}
+      //   let x = [1,2,3,4,5]
+      //   let y = x.pop()
+      //   console.log(x,"x");
+
+      // push() {Adds an element at the end}
+      //   let allnumbers = [1, 2, 34, 6, 7, 8];
+      //   allnumbers.push(3);
+      //   console.log(allnumbers, "allnumbers");
+
+      // shift() {returns firt element and returns it}
+      //   let mynewarray = [1, 2, 3, 4, 5, 6, 7];
+      //   let xyz = mynewarray.shift();
+      //   console.log(xyz,"xyz");
+      //   console.log(mynewarray,"mynewarray");
+
+      // unShift() {add elements to the beginning and returns new array length}
+      let fruits = ["Apple", "Banana", "Mango"];
+      console.log("Before:", fruits);
+
+      let newLength = fruits.unshift("Orange", "Grapes");
+      console.log("After:", fruits);
+      console.log("New Length:", newLength);
+    </script>
+  </body>
+</html>
