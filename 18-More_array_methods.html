@@ -1,14 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>More Array Methods</title>
-</head>
-<body>
-    
+  </head>
+  <body>
+    <ul>
+      <li>concat() [combies arrays and return new arrays]</li>
+      <li>sort() [sort an array alphabatically]</li>
+      <li>Splice() {can be used to add new items to an array}</li>
+      <li>Splice() {slices out a piece from an array, creates a new array}</li>
+      <li>Reverse() {Reverses the elements in the array}</li>
+    </ul>
+
     <script>
-        let num = [1,2,3,4,5,6]
+      // Concat
+      let text1 = "sea";
+      let text2 = "food";
+      let result = text1.concat(text2);
+      console.log(result, "result");
+
+      //   sort() {modifies the original array}
+      let num = [1, 3, 4, 5, 8, 9, 0, 6];
+      num.sort();
+      console.log(num, "num");
+
+      let Fruits = ["Banana", "Grapes", "Apple"];
+      Fruits.sort();
+      console.log(Fruits);
+
+      // Splice
+      const allnum = [1, 2, 3, 4, 5];
+      allnum.splice(2, 1, 23);
+      console.log(allnum, "allnum");
+
+      // Slice
+      const newnumbers = [1, 2, 3, 4, 5, 6];
+      const sliced1 = newnumbers.slice(2);
+      console.log(sliced1, "sliced from index 2");
+      const sliced2 = newnumbers.slice(1, 3);
+      console.log(sliced2, "sliced from index 1 to 3");
+      console.log(newnumbers, "original newnumbers");
+      
     </script>
-</body>
+  </body>
 </html>
