@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>Conditional Expressions</h2>
     <p>In Javascript, we have three forms of if...else statement:-</p>
     <ul>
-        <li>
-            if statement
-        </li>
-        <li>if...else statement</li>
-        <li>if...else...if...else statement</li>
+      <li>if statement</li>
+      <li>if...else statement</li>
+      <li>if...else...if...else statement</li>
     </ul>
     <script>
+      // Prompt asks questions
+      let a = prompt("Whats your age?");
+      console.log(typeof a);
+      //   Covert the string to number
+      a = Number.parseInt(a);
+      console.log(typeof a);
 
+      //   Simple If Else
+      //   if (a > 0) {
+      //     alert("This is a valind Number")
+      //   }
+      //   else {
+      //     alert("Not a valid Number")
+      //   }
+
+      // Alert Informs on browser
+      // alert("This is alert")
+
+      //   Nested If Else
+      //   if (a > 0 && a < 10) {
+      //     alert("Valid Age");
+      //   } else if (a >= 10 && a < 18) {
+      //     alert("Not a Kid");
+      //   } else if (a >= 18 && a <= 22) {
+      //     alert("Young Man");
+      //   } else if (a > 22) {
+      //     alert("Adult");
+      //   } else {
+      //     alert("Invalid Age");
+      //   }
+      //   console.log(a);
+
+      // Ternary Operators
+      //   console.log(a, a < 5 ? "Under Five" : "Upper than five");
+
+      // Switch Case Statements
+      let color = "red";
+
+      switch (color) {
+        case "blue":
+          console.log("It's blue");
+          break;
+        case "red":
+          console.log("It's red");
+          break;
+        default:
+          console.log("Unknown color");
+      }
     </script>
-</body>
+  </body>
 </html>
