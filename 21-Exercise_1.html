@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Generate a random number between 0 and 100
+      //   let randomNumber = Math.floor(Math.random() * 101);
+      let randomNumber = 50;
+      let guess;
+      let attempts = 0;
+
+      while (true) {
+        guess = Number.parseInt(
+          prompt("Guess a number between 0 and 100: "),
+          10
+        );
+        attempts++;
+
+        if (guess === randomNumber) {
+          let score = 100 - attempts;
+          alert(
+            `Correct! The number was ${randomNumber}. Your score is: ${score}`
+          );
+          console.log(
+            `Correct! The number was ${randomNumber}. Your score is: ${score}`
+          );
+          break;
+        } else if (guess > randomNumber) {
+          alert("Too high! Try again.");
+        } else {
+          alert("Too low! Try again.");
+        }
+      }
+    </script>
+  </body>
+</html>
