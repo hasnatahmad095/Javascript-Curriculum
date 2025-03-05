@@ -1,19 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Looping with Arrays</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h2>Looping Through Arrays</h2>
+    <p>
+      Arrays can be looped through using the classical JavaScript for loop or
+      other methods.
+    </p>
+    <ul>
+      <li>For Each</li>
+      <li>map</li>
+      <li>filter</li>
+      <li>reduce</li>
+      <li>Array.from</li>
+      <li>for...of</li>
+      <li>for...in</li>
+    </ul>
 
     <script>
+      let num = [3, 54, 1, 4, 2];
 
-        let num = [3,54,1,4,2]
-        for (let i = 0; i < num.length ; i++) {
-            console.log(num);
-            
-        }
+      // For Loop
+      console.log("For Loop:");
+      for (let i = 0; i < num.length; i++) {
+        console.log(num[i]);
+      }
+
+      // forEach
+      console.log("forEach:");
+      num.forEach((value) => {
+        console.log(value);
+      });
+
+      // map (returns a new array)
+      console.log("map:");
+      let doubled = num.map((value) => value * 2);
+      console.log(doubled);
+
+      // filter (returns a new array with values that pass a condition)
+      console.log("filter:");
+      let filtered = num.filter((value) => value > 10);
+      console.log(filtered);
+
+      // reduce (reduces the array to a single value)
+      console.log("reduce:");
+      let sum = num.reduce((acc, value) => acc + value, 0);
+      console.log(sum);
+
+      // Array.from (creates an array from an iterable)
+      console.log("Array.from:");
+      let str = "12345";
+      let arrFromStr = Array.from(str, Number);
+      console.log(arrFromStr);
+
+      // for...of (iterates over values of an iterable)
+      console.log("for...of:");
+      for (let value of num) {
+        console.log(value);
+      }
+
+      // for...in (iterates over keys/indexes of an array)
+      console.log("for...in:");
+      for (let index in num) {
+        console.log(`Index ${index}: Value ${num[index]}`);
+      }
     </script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 5 Practice</title>
+  </head>
+  <body>
+    <script>
+      // Problem No 1
+      //   let num = [1, 2, 3, 4, 5];
+      //   console.log(num, "num");
+      //   let userinput = Number.parseInt(prompt("Enter Your Value"));
+      //   console.log(userinput);
+      //   num.push(userinput);
+      //   console.log(num, "Updated num");
+
+      // Problem No 2
+      //   let num = [1, 2, 3, 4, 5];
+      //   console.log(num, "Initial num");
+
+      //   while (true) {
+      //     let userinput = Number.parseInt(
+      //       prompt("Enter a number (Enter 0 to stop):")
+      //     );
+      //     if (isNaN(userinput)) {
+      //       alert("Please enter a valid number.");
+      //       continue;
+      //     }
+      //     if (userinput === 0) {
+      //     num.push(userinput);
+      //       break;
+      //     }
+      //     num.push(userinput);
+      //     console.log(num, "Updated num");
+      //   }
+      //   console.log("Final array:", num);
+
+      // Problem No 3
+      // let givenArry = [10, 20, 32, 21,31, 33, 44, 55, 66]
+      // let filtered = givenArry.filter((item) => item % 10 === 0)
+      // console.log(filtered,"filtered");
+
+      // Problem No 4
+      //   let givenArray = [10, 20, 32, 21, 31, 33, 44, 55, 66];
+      //   let squaredArray = givenArray.map((item) => item ** 2);
+      //   console.log(squaredArray, "squaredArray");
+
+      // Problem No 5
+      let n = 5;
+      let numbers = Array.from({ length: n }, (_, i) => i + 1);
+      let factorial = numbers.reduce((acc, num) => acc * num, 1);
+      console.log(`Factorial of ${n}:`, factorial);
+    </script>
+  </body>
+</html>
