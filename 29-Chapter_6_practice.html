@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 6 Practice Set</title>
+  </head>
+  <body>
+    <script>
+      // Problem No 1
+      let runAgain = true;
+      const canDrive = (userPrompt) => {
+        return userPrompt >= 18 ? true : false;
+      };
+      while (runAgain) {
+        let userPrompt = prompt("Enter your age");
+        userPrompt = Number.parseInt(userPrompt);
+        if (userPrompt < 0) {
+            console.error("Age is negative");
+            break;            
+        }
+        if (canDrive(userPrompt)) {
+          alert("Yes you can drive");
+        } else {
+          alert("You cannot drive");
+        }
+        runAgain = confirm("Do you to run this again");
+      }
+    </script>
+  </body>
+</html>
