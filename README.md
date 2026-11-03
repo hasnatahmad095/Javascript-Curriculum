@@ -41,3 +41,9 @@ A compact, file-based curriculum to learn core JavaScript concepts. Each lesson 
 ## Notes
 - File names and numbering reflect the original lesson sequence; follow them as-is.
 - If a browser blocks scripts when opening from the filesystem, serve the folder with a simple local server or use a live server extension in your editor.
+
+## Author
+
+Built and maintained by [Hasnat Ahmad](https://www.devhasnatahmad.com/). Need help with a project? [Get in touch](https://www.devhasnatahmad.com/contact).
+
+If this project saved you time, please give it a ⭐ on GitHub.
